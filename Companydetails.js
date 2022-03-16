@@ -25,7 +25,20 @@ function getcompanydetails(html){
     let sectorstr =sector.text();
     console.log(gettitlestr);
     console.log("       Sector ->      "+ sectorstr);  
+    console.log("-----------------------------------------");
     
+    for(let i = 0;i<1;i++){
+
+        let details = ch(".nsestock_overview .oview_table tbody tr");
+        for(let j=0;j<details.length;j++){
+            let textitem = ch(details[j]).find("td");
+            let givetext = ch(textitem[0]).text().trim();
+            let givetext2 = ch(textitem[1]).text().trim();
+            console.log("----------------------------------------------------------")
+            console.log(givetext +"\t \t"+givetext2);
+        }
+        console.log("===========================================================\n");
+    }
   
 
 }

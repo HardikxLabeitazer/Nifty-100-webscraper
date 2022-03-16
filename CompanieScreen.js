@@ -20,10 +20,10 @@ function getdetails(html){
       
       let getattr = ch(geteachcomp[i]).attr("href");
       let fullComplink = "https://www.moneycontrol.com" +getattr;
+      
+      
       companygetdetails.pt(fullComplink);
        
-      
-      
     
 }  
     }
