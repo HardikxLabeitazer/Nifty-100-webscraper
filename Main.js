@@ -8,7 +8,13 @@ const { Console } = require("console");
 const allcompany = require("./allCompanies");
 
 
-
+let companyAddress = path.join(__dirname,"NIFTY");
+function dircreator(fileaddress){
+    if(fs.existsSync(fileaddress)==false){
+        fs.mkdirSync(fileaddress);
+    }
+}
+dircreator(companyAddress);
 request(url,function(err,res,html){
     if(err) console.log(err);
 
