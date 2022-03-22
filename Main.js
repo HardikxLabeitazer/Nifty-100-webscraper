@@ -16,6 +16,7 @@ function dircreator(fileaddress){
     }
 }
 dircreator(companyAddress);
+// dircreator(companyAddress);
 request(url,function(err,res,html){
     if(err) console.log(err);
 

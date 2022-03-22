@@ -12,6 +12,7 @@ function accessdetails(url){
 
 
 
+
 function getdetails(html){
     let ch = cheerio.load(html);
     let geteachcomp = ch('.bdrtpg .bl_12');

@@ -21,6 +21,8 @@ function getalladdress(html){
    
 }
 
+
+
 module.exports={
     getcompanies :getallcompanies,
 };
